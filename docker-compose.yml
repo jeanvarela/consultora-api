@@ -1,13 +1,13 @@
 version: '3.8'
 
 services:
-  db:
+  consultoradb:
     image: postgres:latest
-    container_name: postgres_db
+    container_name: consultora_db
     environment:
       POSTGRES_USER: userdb        # Set your desired PostgreSQL username
       POSTGRES_PASSWORD: rE6x67J7rN3C     # Set your desired PostgreSQL password
-      POSTGRES_DB: contructordb     # Set your desired database name
+      POSTGRES_DB: consultoradb     # Set your desired database name
     ports:
       - "5432:5432"                  # Expose PostgreSQL default port to the host machine
     volumes:
@@ -16,11 +16,11 @@ services:
       - pg_network
   app:
     build: .
-    container_name: api_app
+    container_name: consultora_app
     ports:
       - "8080:8080"
     depends_on:
-      - db
+      - consultoradb
     networks:
       - pg_network
 

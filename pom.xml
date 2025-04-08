@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>br.com</groupId>
-	<artifactId>api-contractor</artifactId>
+	<artifactId>consultora-api</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>api-contractor</name>
+	<name>consultora-api</name>
 	<description>API para o projeto Construtor</description>
 
 	<properties>
@@ -126,6 +126,6 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 		</plugins>
-		<finalName>api-contractor</finalName>
+		<finalName>api-consultora</finalName>
 	</build>
 </project>

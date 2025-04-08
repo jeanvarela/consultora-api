@@ -18,7 +18,7 @@ FROM eclipse-temurin:17-jdk
 WORKDIR /app
 
 # Copiar o arquivo .jar gerado no estágio anterior
-COPY --from=build /app/target/api-contractor.jar /app/api.jar
+COPY --from=build /app/target/api-consultora.jar /app/api.jar
 
 # Copiar o script wait-for-it.sh
 COPY wait-for.sh /wait-for-it.sh
